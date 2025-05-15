@@ -1215,9 +1215,9 @@ $(document).ready(function() {
     });
 });
 opensdg.chartColors = function(indicatorId) {
-  var colorSet = "accessible";
-  var numberOfColors = 0;
-  var customColorList = [];
+  var colorSet = "custom";
+  var numberOfColors = 15;
+  var customColorList = ["D32F2F","4CAF50","7B1FA2","1976D2","FFEB3B","795548","FF9800","E91E63","512DA8","CDDC39","455A64","FF5722","42d4f4","aaffc3","800000"];
 
   this.goalNumber = parseInt(indicatorId.slice(indicatorId.indexOf('_')+1,indicatorId.indexOf('-')));
   this.goalColors = [['e5243b', '891523', 'ef7b89', '2d070b', 'f4a7b0', 'b71c2f', 'ea4f62', '5b0e17', 'fce9eb'],
@@ -3147,8 +3147,8 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
-      mapLayers: [],
+      mapOptions: {"disaggregation_controls":false,"minZoom":10,"maxZoom":20,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.YlOrRd","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapLayers: [{"subfolder":"councils","label":"indicator.map","min_zoom":0,"max_zoom":20,"staticBorders":false}],
       precision: precision,
       precisionItems: precisionItems,
       decimalSeparator: decimalSeparator,
