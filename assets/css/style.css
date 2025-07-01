@@ -2652,11 +2652,18 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 .embedded-map iframe {
   width: 100%;
-  max-width: 1000px;
+  zoom: 1;
   height: 600px;
   display: block;
   margin: 0 auto;
   border: 0; }
+
+.all-maps {
+  display: flex;
+  align-items: centre;
+  justify-content: center;
+  width: 600px;
+  height: 600px; }
 
 @media only screen and (min-width: 992px) {
   .frontpage-goals-grid .goal-tiles .goal-tile {
