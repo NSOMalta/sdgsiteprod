@@ -2650,7 +2650,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .embedded-map img {
   max-width: 100%; }
 
-.embedded-map iframe {
+.embedded-map iframe, .embedded-maps iframe {
   width: 100%;
   zoom: 1;
   height: 600px;
@@ -2658,12 +2658,29 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   margin: 0 auto;
   border: 0; }
 
-.all-maps {
+.embedded-maps {
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-top: 50px;
+  padding: 20px; }
+
+.map-indicator-buttons {
   display: flex;
-  align-items: centre;
-  justify-content: center;
-  width: 600px;
-  height: 600px; }
+  flex-direction: row;
+  padding: 10px; }
+
+.esri-view .esri-view-surface:focus:after {
+  box-sizing: border-box;
+  z-index: 999;
+  outline-offset: var(--esri-view-outline-offset);
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
 
 @media only screen and (min-width: 992px) {
   .frontpage-goals-grid .goal-tiles .goal-tile {
@@ -2730,6 +2747,11 @@ h1 {
   background-color: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
   background-size: 200% auto !important;
   background-position: right center !important;
+  color: #fff !important; }
+
+#map-4:focus, #map-8:focus {
+  box-shadow: none !important;
+  border: 2px solid transparent !important;
   color: #fff !important; }
 
 body {
