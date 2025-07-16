@@ -2750,7 +2750,7 @@ h1 {
     background: #00a69f !important; 
 }
 */
-.btn-download {
+.btn-primary {
   box-shadow: none !important;
   font-size: 13px;
   padding: 12px 32px;
@@ -2766,7 +2766,7 @@ h1 {
   color: white !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important; }
 
-.btn-download:hover, .btn-download:focus {
+.btn-primary:hover, .btn-primary:focus {
   box-shadow: none !important;
   border: 2px solid transparent !important;
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
