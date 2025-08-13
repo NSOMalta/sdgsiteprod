@@ -339,7 +339,7 @@
           "description": "",
           "keywords": "",
           "href": "/3-5-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         },
         {
           "id": "3-5-2",
@@ -499,7 +499,7 @@
           "description": "",
           "keywords": "",
           "href": "/4-2-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         },
         {
           "id": "4-2-2",
@@ -571,7 +571,7 @@
           "description": "",
           "keywords": "",
           "href": "/4-c-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         }]
     }
   },
@@ -619,7 +619,7 @@
           "description": "",
           "keywords": "",
           "href": "/5-3-2/",
-          "status": "notstarted"
+          "status": "notapplicable"
         },
         {
           "id": "5-4-1",
@@ -1195,7 +1195,7 @@
           "description": "",
           "keywords": "",
           "href": "/10-a-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         },
         {
           "id": "10-b-1",
@@ -1307,7 +1307,7 @@
           "description": "",
           "keywords": "",
           "href": "/11-7-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         },
         {
           "id": "11-7-2",
@@ -1363,7 +1363,7 @@
           "description": "",
           "keywords": "",
           "href": "/12-1-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         },
         {
           "id": "12-2-1",
@@ -1459,7 +1459,7 @@
           "description": "",
           "keywords": "",
           "href": "/12-c-1/",
-          "status": "inprogress"
+          "status": "notstarted"
         }]
     }
   },
