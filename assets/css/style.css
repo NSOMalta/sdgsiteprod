@@ -2685,6 +2685,19 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   padding: 0;
   margin: 0; }
 
+a {
+  color: #008080;
+  text-decoration: none; }
+
+a:hover {
+  color: #32BCAD !important;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:focus, a:active, a:visited {
+  color: #008080;
+  text-decoration: none; }
+
 .card-text a {
   text-decoration: none;
   color: #32BCAD;
@@ -2695,7 +2708,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .card-text a:hover {
   font-weight: bold;
   text-decoration: none;
-  color: #32BCAD; }
+  color: #32BCAD !important; }
 
 @media only screen and (max-width: 770px) {
   .map-indicator-buttons {
@@ -2730,7 +2743,8 @@ h1 {
   color: #0b0c0c; }
 
 .navbar .navbar-nav > .nav-item > .nav-link:hover {
-  border-bottom: 3px solid #eea337; }
+  border-bottom: 3px solid #eea337;
+  color: #0b0c0c !important; }
 
 /*
 .btn-download {
@@ -3032,3 +3046,7 @@ body.contrast-high #search button {
 
 .extra-small-icon li a:hover {
   opacity: .5; }
+
+.status-inner {
+  display: flex;
+  justify-content: center; }
