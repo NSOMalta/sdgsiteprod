@@ -2959,7 +2959,6 @@ body.contrast-high #search button {
   margin: auto;
   width: 90%;
   justify-content: space-between;
-  /* ?  i am not sing it */
   border-color: #e4e4e4; }
 
 .footer_1 {
@@ -3062,6 +3061,15 @@ body.contrast-high #search button {
   display: flex;
   justify-content: center; }
 
+.header-toggles.d-flex a {
+  text-decoration: none; }
+
+.header-toggles.d-flex a:hover {
+  background-color: #313131 !important; }
+
+body.contrast-high .header-toggles.d-flex a:hover {
+  background-color: #ffffff !important; }
+
 .header-toggles.d-flex a:focus {
   box-shadow: none !important;
   color: #FFDD00 !important;
@@ -3132,7 +3140,7 @@ body.contrast-high #main-content p > a:hover,
 body.contrast-high #main-content ul > li > a:hover {
   color: #c05306 !important;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 body.contrast-high #search-bar-on-page button, body.contrast-high #search button {
   color: white;
