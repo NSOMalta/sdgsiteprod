@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260326162949">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260330222148">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -417,14 +417,14 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Education level&quot;,&quot;value&quot;:&quot;Primary&quot;},{&quot;field&quot;:&quot;Education level&quot;,&quot;value&quot;:&quot;Lower Secondary&quot;},{&quot;field&quot;:&quot;Type of Skill&quot;,&quot;value&quot;:&quot;Minimum proficiency in mathematics&quot;},{&quot;field&quot;:&quot;Type of Skill&quot;,&quot;value&quot;:&quot;Minimum proficiency in reading&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Education level&quot;,&quot;value&quot;:&quot;Primary&quot;},{&quot;field&quot;:&quot;Education level&quot;,&quot;value&quot;:&quot;Lower Secondary&quot;},{&quot;field&quot;:&quot;Minimum proficiency&quot;,&quot;value&quot;:&quot;Mathematics&quot;},{&quot;field&quot;:&quot;Minimum proficiency&quot;,&quot;value&quot;:&quot;Reading&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Education level&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Primary&quot;,&quot;Lower Secondary&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Education level&quot;},{&quot;name&quot;:&quot;Type of Skill&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Minimum proficiency in mathematics&quot;,&quot;Minimum proficiency in reading&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of Skill&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Education level&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Primary&quot;,&quot;Lower Secondary&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Education level&quot;},{&quot;name&quot;:&quot;Minimum proficiency&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Mathematics&quot;,&quot;Reading&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Minimum proficiency&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -572,11 +572,17 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Sources:</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>Mathematics data for the primary education level has been sourced from the Trends in International Mathematics and Science Study (TIMSS) conducted by the International Association for the Evaluation of Educational Achievement (IEA).</li>
+  <li>Reading data for the primary education level has been sourced from the Progress in International Reading Literacy Study (PIRLS) conducted by the International Association for the Evaluation of Educational Achievement (IEA).</li>
+  <li>All data for the lower secondary education level has been sourced from the Programme for International Student Assessment (PISA) carried out by the Organisation for Economic Co-operation and Development (OECD).</li>
+</ol>
+
+<p>Sources:</p>
 <ul>
-  <li>Trends in International Mathematics and Science Study,  International Association for the Evaluation of Educational Achievement (For the mathematics figures for the Primary education level)</li>
-  <li>Progress in International Reading Literacy Study,  International Association for the Evaluation of Educational Achievement (For the reading figures for the Primary education level)</li>
-  <li>Programme for International Student Assessment,  International Association for the Evaluation of Educational Achievement and the Organisation for Economic Co-operation and Development (For the mathematics and reading figures for the Lower Secondary education level)</li>
+  <li>International Association for the Evaluation of Educational Achievement (IEA)</li>
+  <li>Organisation for Economic Co-operation and Development (OECD)</li>
 </ul>
 </dd>
         
@@ -647,11 +653,17 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Sources:</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>Mathematics data for the primary education level has been sourced from the Trends in International Mathematics and Science Study (TIMSS) conducted by the International Association for the Evaluation of Educational Achievement (IEA).</li>
+  <li>Reading data for the primary education level has been sourced from the Progress in International Reading Literacy Study (PIRLS) conducted by the International Association for the Evaluation of Educational Achievement (IEA).</li>
+  <li>All data for the lower secondary education level has been sourced from the Programme for International Student Assessment (PISA) carried out by the Organisation for Economic Co-operation and Development (OECD).</li>
+</ol>
+
+<p>Sources:</p>
 <ul>
-  <li>Trends in International Mathematics and Science Study,  International Association for the Evaluation of Educational Achievement (For the mathematics figures for the Primary education level)</li>
-  <li>Progress in International Reading Literacy Study,  International Association for the Evaluation of Educational Achievement (For the reading figures for the Primary education level)</li>
-  <li>Programme for International Student Assessment,  International Association for the Evaluation of Educational Achievement and the Organisation for Economic Co-operation and Development (For the mathematics and reading figures for the Lower Secondary education level)</li>
+  <li>International Association for the Evaluation of Educational Achievement (IEA)</li>
+  <li>Organisation for Economic Co-operation and Development (OECD)</li>
 </ul>
 </dd>
         
@@ -1072,7 +1084,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Trends in International Mathematics and Science Study,  International Association for the Evaluation of Educational Achievement (For the mathematics figures for the Primary education level)</p>
+            <p>International Association for the Evaluation of Educational Achievement (IEA)</p>
 
           
         </td>
@@ -1302,7 +1314,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Progress in International Reading Literacy Study,  International Association for the Evaluation of Educational Achievement (For the reading figures for the Primary education level)</p>
+            <p>Organisation for Economic Co-operation and Development (OECD)</p>
 
           
         </td>
@@ -1378,223 +1390,6 @@ data-event-label="Change to Sources tab"
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-        <h4>Source 3</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Programme for International Student Assessment,  International Association for the Evaluation of Educational Achievement and the Organisation for Economic Co-operation and Development (For the mathematics and reading figures for the Lower Secondary education level)</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
   
   
   
@@ -1762,12 +1557,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20260326162949'></script>
+<script src='/assets/js/sdg.js?v=20260330222148'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20260326162949"></script><script>
+    <script src="/assets/js/custom.js?v=20260330222148"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
