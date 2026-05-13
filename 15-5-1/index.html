@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260511174823">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260513154627">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -418,7 +418,7 @@ layout-indicator
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
-  data-graphlimits="[]"
+  data-graphlimits="[{&quot;unit&quot;:&quot;Index&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:1,&quot;stepSize&quot;:0.1}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
@@ -487,7 +487,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.854</td>
           
           
         </tr>
@@ -499,7 +499,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.852</td>
           
           
         </tr>
@@ -511,7 +511,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.85</td>
           
           
         </tr>
@@ -523,7 +523,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.847</td>
           
           
         </tr>
@@ -535,7 +535,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.845</td>
           
           
         </tr>
@@ -547,7 +547,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.844</td>
           
           
         </tr>
@@ -559,7 +559,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.842</td>
           
           
         </tr>
@@ -571,7 +571,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.84</td>
           
           
         </tr>
@@ -583,7 +583,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.838</td>
           
           
         </tr>
@@ -595,7 +595,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.836</td>
           
           
         </tr>
@@ -607,7 +607,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.835</td>
           
           
         </tr>
@@ -619,7 +619,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.832</td>
           
           
         </tr>
@@ -631,7 +631,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.831</td>
           
           
         </tr>
@@ -643,7 +643,7 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.829</td>
           
           
         </tr>
@@ -655,7 +655,19 @@ layout-indicator
           
           
           
-          <td class="table-value">0.923</td>
+          <td class="table-value">0.827</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">0.825</td>
           
           
         </tr>
@@ -677,7 +689,9 @@ layout-indicator
     <p>Unit of Measurement: Index</p>
     
     
-    <p>Footnote: Note: The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.
+    <p>Footnote: Notes:
+1. The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.
+2. This indicator is based on global estimates of the extinction risk (IUCN Red List categories) of all mammals, birds, amphibians, corals and cycads, derived from local and national data, disaggregated to the national scale and weighted by the proportion of each species's distribution in the country or region.
 
 Sources:
 + BirdLife International
@@ -791,7 +805,11 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Note: The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.</li>
+  <li>This indicator is based on global estimates of the extinction risk (IUCN Red List categories) of all mammals, birds, amphibians, corals and cycads, derived from local and national data, disaggregated to the national scale and weighted by the proportion of each species’s distribution in the country or region.</li>
+</ol>
 
 <p>Sources:</p>
 <ul>
@@ -867,7 +885,11 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Note: The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>The Red List Index shows the aggregate extinction risk for species within the country or region relative to its potential contribution to global species extinction risk. It is measured on a scale of 0 to 1, where 1 is the maximum contribution that the country or region can make to global species survival, equating to all species being classified as Least Concern on the IUCN Red List, and 0 is the minimum contribution that the country or region can make to global species survival, equating to all species in the country or region having gone extinct.</li>
+  <li>This indicator is based on global estimates of the extinction risk (IUCN Red List categories) of all mammals, birds, amphibians, corals and cycads, derived from local and national data, disaggregated to the national scale and weighted by the proportion of each species’s distribution in the country or region.</li>
+</ol>
 
 <p>Sources:</p>
 <ul>
@@ -1766,12 +1788,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20260511174823'></script>
+<script src='/assets/js/sdg.js?v=20260513154627'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20260511174823"></script><script>
+    <script src="/assets/js/custom.js?v=20260513154627"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
